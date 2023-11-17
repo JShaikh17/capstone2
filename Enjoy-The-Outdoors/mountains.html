@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <title>Nature Explorer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><strong>Touch Park</strong></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mountains.html">Mountains</a></li>
+          <li><a href="parks.html">National Parks</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <table>
+        <tr>
+          <td>
+            <label for="mountainData">Select a Mountain:</label>
+          </td>
+          <td>
+            <select name="mountain-data" id="mountainData">
+              <option value="select">Select...</option>
+              <!-- Add other mountain options dynamically if needed -->
+            </select>
+          </td>
+          <td>
+            <button type="button" onclick="displayMountainOnClick()">Confirm Selection</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <p id="displayMountainOutput"></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <div id="mountainImage"></div>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Shaikh</p>
+    </footer>
+
+    <script src="scripts/mountainData.js"></script>
+    <script src="scripts/mountain.js"></script>
+  </body>
+</html>

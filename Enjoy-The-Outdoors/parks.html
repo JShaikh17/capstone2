@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><strong>Touch Park</strong></li>
+        </ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mountains.html">Moutains</a></li>
+        <li><a href="parks.html">National Parks</a></li>
+      </nav>
+    </header>
+    <main>
+      <div class="radio-btn-filter">
+        <input class="radio-btn" type="radio" name="filter" id="byLocationRadioFilter" />
+        <label for="byLocationRadioFilter">By Location</label>
+        <input class="radio-btn" type="radio" name="filter" id="byTypeRadioFilter" />
+        <label for="byTypeRadioFilter">By Type</label>
+        <input class="radio-btn" type="radio" name="filter" id="byAllRadioFilter" />
+        <label for="byAllRadioFilter">All Parks</label>
+      </div>
+      <article id="parkArticle">
+        <form>
+          <label for="parkDropdown">States/Terrority</label>
+          <select id="parkDropdown">
+            <option value="">Select...</option>
+          </select>
+        </form>
+      </article>
+      <table id="parkTypeTable" style="display: none;">
+        <thead>
+          <tr>
+            <th>Location ID</th>
+            <th>Location Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Phone</th>
+            <th>Fax</th>
+            <th>Latitude</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody id="parkTableBody"></tbody>
+      </table>
+    </main>
+    <footer></footer>
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+    <script src="scripts/nationalParkData.js"></script>
+    <script src="scripts/park.js"></script>
+    <footer>
+      <p>&copy; 2024 Shaikh</p>
+    </footer>
+  </body>
+</html>

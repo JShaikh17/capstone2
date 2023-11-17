@@ -1,0 +1,9 @@
+.image-container {
+    text-align: center;
+    margin-top: 50px; /* You can adjust this margin based on your design preferences */
+  }
+  
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+  }
